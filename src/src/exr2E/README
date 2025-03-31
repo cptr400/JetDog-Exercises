@@ -1,0 +1,14 @@
+The callbacks introduced in this exercise are:
+
+Concepts
+	1. of Layers.
+	2. Mouse listener
+Exercise2B:
+	1. enlistEntities(EntityModel ...)
+	2. onKeysPolled(MultiKeyEvent)
+	3. onCollisionsPolled(CollisionEvent[])
+Alien:
+	1. setAppearance()
+	2. onOutOfBounds(OutOfouncdsEvent)
+	3. updateParameters()
+	

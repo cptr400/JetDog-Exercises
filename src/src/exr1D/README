@@ -1,0 +1,10 @@
+The callbacks introduced in this exercise are:
+
+Exercise1D:
+	1. enlistEntities(EntityModel ...)
+	2. onKeysPolled(MultiKeyEvent)
+	3. onCollisionsPolled(CollisionEvent[])
+Alien:
+	1. setAppearance()
+	2. onOutOfBounds(OutOfouncdsEvent)
+	

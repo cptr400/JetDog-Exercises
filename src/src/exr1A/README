@@ -1,0 +1,7 @@
+The callbacks introduced in this exercise are:
+
+Exercise1A:
+	1. enlistEntities(EntityModel ...)
+Alien:
+	1. setAppearance()
+	

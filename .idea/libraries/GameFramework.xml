@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GameFramework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JetDog-Framework/out/artifacts/GameFramework_jar/GameFramework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

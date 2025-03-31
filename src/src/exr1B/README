@@ -1,0 +1,8 @@
+The callbacks introduced in this exercise are:
+
+Exercise1B:
+	1. enlistEntities(EntityModel ...)
+	2. onKeysPolled(MultiKeyEvent)
+Alien:
+	1. setAppearance()
+	
