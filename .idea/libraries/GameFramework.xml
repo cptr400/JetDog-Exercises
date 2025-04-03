@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../JetDog-Framework/out/artifacts/GameFramework_jar/GameFramework.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../JetDog-Framework/out/artifacts/doc" />
+    </JAVADOC>
     <SOURCES />
   </library>
 </component>
