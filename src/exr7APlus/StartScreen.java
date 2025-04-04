@@ -23,7 +23,7 @@ public class StartScreen {
 
 	public void addComponents() {
 		startScreen = new ArrayList<>();
-		EntityModel em = new TextModel(controller.getWidth() / 2, 7 * controller.getHeight() / 10) {
+		EntityModel em = new TextModel(controller.getWidth() / 2, 5 * controller.getHeight() / 10) {
 
 			@Override
 			protected void updateParameters(long elapsedTime) {
@@ -42,7 +42,7 @@ public class StartScreen {
 		em.setGhost(true);
 		startScreen.add(em);
 		
-		prompt = new TextModel(controller.getWidth() / 2, 9 * controller.getHeight() / 10) {
+		prompt = new TextModel(controller.getWidth() / 2, 6 * controller.getHeight() / 10) {
 
 			@Override
 			protected void updateParameters(long elapsedTime) {

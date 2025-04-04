@@ -1,6 +1,6 @@
 package exr7APlus;
 
-public class FireballA extends Fireball {
+public class FireballA extends Fireball{
 
 	private final String imageFile = "fireball-4.png";
 	private float velocity = 10.0f;

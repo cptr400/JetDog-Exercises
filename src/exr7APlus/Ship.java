@@ -17,7 +17,7 @@ public class Ship extends SpriteModel{
 
 	@Override
 	protected void setAppearance() {
-		setView(sprite_shipB,10);
+		setView(imageFile, 10);
 	}
 
 }

@@ -7,7 +7,7 @@ package exr7APlus;
  * @author Krish Pillai
  *
  */
-public class FireballB extends Fireball {
+public class FireballB extends Fireball{
 	
 	private final String missileImage = "fireball-6.png";
 	private float fireballVelocity = 40.0f;

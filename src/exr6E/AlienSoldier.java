@@ -36,7 +36,7 @@ public abstract class AlienSoldier extends Alien {
 	}
 
 	/**
-	 * @param state the frontLine to set
+	 * @param frontLine the frontLine to set
 	 */
 	public void setFrontLine(boolean state) {
 		setShowBounds(state);

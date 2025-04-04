@@ -1,7 +1,6 @@
 package exr7APlus;
 
 import event.State;
-import exr6E.Exercise6E;
 import util.SoundEffects;
 
 /**

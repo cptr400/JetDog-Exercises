@@ -64,7 +64,7 @@ public class ScoreBoard {
 	
 	private void addComponents() {
 		
-		scoreBoard = new TextModel(70, 60, 0) {
+		scoreBoard = new TextModel(70, 40, 0) {
 			
 			@Override
 			protected void updateParameters(long elapsedTime) {

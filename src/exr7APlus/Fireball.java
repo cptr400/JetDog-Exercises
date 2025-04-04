@@ -6,7 +6,6 @@ public abstract class Fireball extends SpriteModel{
 
 	private int cost = 0;
 
-
 	/**
 	 * @param x
 	 * @param y

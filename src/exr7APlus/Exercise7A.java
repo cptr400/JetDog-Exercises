@@ -10,9 +10,19 @@ import java.awt.event.KeyListener;
 
 import javax.swing.SwingUtilities;
 
-import common.*;
-import event.*;
-import role.*;
+import common.FSM;
+import event.BlockedEvent;
+import event.CollisionEvent;
+import event.MessageEvent;
+import event.OutOfBoundsEvent;
+import event.State;
+import event.StateChangeEvent;
+import event.StateChangeListener;
+import role.BarrierModel;
+import role.EntityModel;
+import role.GameController;
+import role.SceneryModel;
+import role.TextModel;
 import util.SoundEffects;
 
 /**
@@ -474,44 +484,42 @@ public class Exercise7A extends GameController implements KeyListener, StateChan
 	@Override
 	public void keyTyped(KeyEvent e) {
 		// System.out.println(KeyEvent.getKeyText(e.getExtendedKeyCode()));
-		int keyCode = e.getKeyChar();
+		int keyCode = e.getExtendedKeyCode();
 		if (fsm.getCurrentState().equals(s0)) { // Process input
 			String k = "";
 
 			switch (keyCode) {
 
-			case '\n':
+			case KeyEvent.VK_ENTER:
 				userName = stringBuilder.toString();
 				currentAction = "A";
 				break;
-			case ' ':
+			case KeyEvent.VK_BACK_SPACE:
 				if (stringBuilder.length() > 0) {
 					stringBuilder.deleteCharAt(stringBuilder.length() - 1);
 				}
 				break;
-			case 0x27:
+			case KeyEvent.VK_ESCAPE:
 				System.exit(0);
 			default:
-				k = Character.toString(keyCode);
+				k = KeyEvent.getKeyText(keyCode);
 			}
 			stringBuilder.append(k);
 			startScreen.appendToMessage(stringBuilder.toString());
 		} else {
 			switch (keyCode) {
 
-			case 'y':
-			case 'Y':
+			case KeyEvent.VK_Y:
 				currentAction = "G";
 				break;
-			case 'n':
-			case 'N':
+			case KeyEvent.VK_N:
 				currentAction = "H";
 				break;
-			case 0x27:
+			case KeyEvent.VK_ESCAPE:
 				dispose();
 				System.exit(0);
 				break;
-			case '\n':
+			case KeyEvent.VK_ENTER:
 				currentAction = "A";
 				break;
 			default:

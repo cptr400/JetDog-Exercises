@@ -65,7 +65,7 @@ public class ScoreBoard {
 	
 	private void addComponents() {
 		
-		scoreBoard = new TextModel(70, 70, 0) {
+		scoreBoard = new TextModel(70, 40, 0) {
 			
 			@Override
 			protected void updateParameters(long elapsedTime) {
@@ -81,7 +81,7 @@ public class ScoreBoard {
 		scoreBoard.setGhost(true);
 		components.add(scoreBoard);
 		
-		hiScore = new TextModel(controller.getWidth() - 100, 70, 0) {
+		hiScore = new TextModel(controller.getWidth() - 100, 40, 0) {
 			
 			@Override
 			protected void updateParameters(long elapsedTime) {
@@ -98,7 +98,7 @@ public class ScoreBoard {
 		hiScore.setGhost(true);
 		components.add(hiScore);
 		
-		userInfo = new TextModel(400, 70, 0) {
+		userInfo = new TextModel(400, 40, 0) {
 			
 			@Override
 			protected void updateParameters(long elapsedTime) {

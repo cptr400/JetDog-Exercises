@@ -13,7 +13,7 @@ public abstract class Alien extends SpriteModel {
 
 	private float alienVelocity = 10.0f;
 	private float stepVelocity = 0.7f;
-	private float stepForward = 20.0f; 
+	private int stepForward = 20;
 	
 	public Alien(int x, int y) {
 		super(x, y);
@@ -38,7 +38,7 @@ public abstract class Alien extends SpriteModel {
 	}
 	
 	protected void stepForward() {
-		setYLocation(getYLocation()+ (int)stepForward);
+		setYLocation(getYLocation()+ stepForward);
 	}
 
 }

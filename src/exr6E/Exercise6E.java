@@ -9,10 +9,21 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.SwingUtilities;
-import event.*;
-import role.*;
-import common.*;
-import util.*;
+
+import common.FSM;
+import event.BlockedEvent;
+import event.CollisionEvent;
+import event.MessageEvent;
+import event.OutOfBoundsEvent;
+import event.State;
+import event.StateChangeEvent;
+import event.StateChangeListener;
+import role.BarrierModel;
+import role.EntityModel;
+import role.GameController;
+import role.SceneryModel;
+import role.TextModel;
+import util.SoundEffects;
 
 /**
  * 
