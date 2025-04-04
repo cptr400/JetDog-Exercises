@@ -53,6 +53,12 @@ public class Exercise3F extends GameController{
 					plane.dispose();
 					System.exit(0);
 				}
+				if (code == KeyEvent.VK_A) {
+					plane.setAnimate(true);
+				}
+				if (code == KeyEvent.VK_S) {
+					plane.setAnimate(false);
+				}
 			}
 			
 			if (!leftKey && !rightKey) {
