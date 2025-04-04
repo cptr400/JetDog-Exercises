@@ -33,7 +33,7 @@ public class AlienSoldier extends Alien {
 	}
 
 	/**
-	 * @param frontLine the frontLine to set
+	 * @param state the frontLine to set
 	 */
 	public void setFrontLine(boolean state) {
 		setShowBounds(state);
